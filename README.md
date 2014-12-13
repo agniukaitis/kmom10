@@ -7,4 +7,7 @@ built by one of the course teachers.
 Installing
 -----------
 To install you own version of the website, you can clone the repo using:
-    git clone https://github.com/niwhede/kmom10.git
+>    git clone https://github.com/niwhede/kmom10.git
+
+The site used MySql databases to store information. To use the site properly
+you need six sql tables. 

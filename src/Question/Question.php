@@ -293,4 +293,91 @@ class Question extends \Anax\MVC\CDatabaseModel {
     $res = $this->db->executeFetchAll($sql);
     return $res;
   }
+
+
+  public function setup() {
+    $sql = "CREATE TABLE `test_users` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `acronym` varchar(20) NOT NULL,
+    `email` varchar(80) DEFAULT NULL,
+    `name` varchar(80) DEFAULT NULL,
+    `password` varchar(255) DEFAULT NULL,
+    `created` datetime DEFAULT NULL,
+    `updated` datetime DEFAULT NULL,
+    `deleted` datetime DEFAULT NULL,
+    `active` datetime DEFAULT NULL,
+    `timesLoggedOn` int(11) DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `acronym` (`acronym`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+    ";
+    $this->db->execute($sql);
+
+    $sql = "CREATE TABLE `test_question` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `question` tinytext,
+    `name` varchar(80) DEFAULT NULL,
+    `mail` varchar(80) DEFAULT NULL,
+    `timestamp` datetime DEFAULT NULL,
+    `ip` varchar(20) DEFAULT NULL,
+    `title` varchar(80) DEFAULT NULL,
+    `tags` text,
+    `votes` int(11) DEFAULT '0',
+    `nbrOfAnswers` int(11) DEFAULT '0',
+    `acceptedAnswer` int(11) DEFAULT '0',
+    `userID` int(11) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+    ";
+    $this->db->execute($sql);
+
+    $sql = "CREATE TABLE `test_tags` (
+    `tag` varchar(90) DEFAULT NULL,
+    `timesUsed` int(11) DEFAULT NULL,
+    UNIQUE KEY `tag_UNIQUE` (`tag`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    ";
+    $this->db->execute($sql);
+
+    $sql = "CREATE TABLE `test_commentsOnAnswers` (
+    `id` int(11) DEFAULT NULL,
+    `user` varchar(45) DEFAULT NULL,
+    `comment` tinytext,
+    `posted` timestamp NULL DEFAULT NULL,
+    `commentID` int(11) NOT NULL AUTO_INCREMENT,
+    `votes` int(11) DEFAULT '0',
+    PRIMARY KEY (`commentID`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+    ";
+    $this->db->execute($sql);
+
+    $sql = "CREATE TABLE `test_comments` (
+    `id` int(11) DEFAULT NULL,
+    `user` varchar(45) DEFAULT NULL,
+    `comment` tinytext,
+    `posted` timestamp NULL DEFAULT NULL,
+    `votes` int(11) DEFAULT '0',
+    `commentID` int(11) NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (`commentID`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+    ";
+    $this->db->execute($sql);
+
+    $sql = "CREATE TABLE `test_answer` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `user` varchar(45) DEFAULT NULL,
+    `answer` tinytext,
+    `questionID` int(11) DEFAULT NULL,
+    `accepted` int(11) DEFAULT '0',
+    `votes` int(11) DEFAULT '0',
+    PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=latin1;
+    ";
+    $this->db->execute($sql);
+
+  }
+
+
+
+
 }

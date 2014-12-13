@@ -123,7 +123,6 @@ $app->router->add('users', function() use ($app) {
 });
 
 
-
 // $app->theme->addStylesheet('../webroot/css/flash.css');
 $app->router->handle();
 $app->theme->render();

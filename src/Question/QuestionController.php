@@ -43,27 +43,28 @@ class QuestionController implements \Anax\DI\IInjectionAware {
   public function setupAction() {
 
     $this->theme->setTitle("Reset and setup database.");
-
-    $table = [
-      'id' => ['integer', 'primary key', 'not null', 'auto_increment'],
-      'question' => ['tinytext'],
-      'name' => ['varchar(80)'],
-      'mail' => ['varchar(80)'],
-      'timestamp' => ['datetime'],
-      'ip' => ['varchar(20)'],
-      'title' => ['varchar(80)'],
-      'tags' => ['text'],
-      'votes' => ['integer'],
-      'nbrOfAnswers' => ['integer'],
-      'acceptedAnswers' => ['integer'],
-      'userID' => ['integer'],
-    ];
-
-    $res = $this->question->setupTable($table);
-    $now = date('Y-m-d H:i:s');
-
-    $url = $this->url->create('question');
-    $this->response->redirect($url);
+    $this->question->setup();
+    //
+    // $table = [
+    //   'id' => ['integer', 'primary key', 'not null', 'auto_increment'],
+    //   'question' => ['tinytext'],
+    //   'name' => ['varchar(80)'],
+    //   'mail' => ['varchar(80)'],
+    //   'timestamp' => ['datetime'],
+    //   'ip' => ['varchar(20)'],
+    //   'title' => ['varchar(80)'],
+    //   'tags' => ['text'],
+    //   'votes' => ['integer'],
+    //   'nbrOfAnswers' => ['integer'],
+    //   'acceptedAnswers' => ['integer'],
+    //   'userID' => ['integer'],
+    // ];
+    //
+    // $res = $this->question->setupTable($table);
+    // $now = date('Y-m-d H:i:s');
+    //
+    // $url = $this->url->create('question');
+    // $this->response->redirect($url);
   }
 
   /**

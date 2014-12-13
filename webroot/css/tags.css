@@ -1,0 +1,31 @@
+.tag {
+  float: left;
+  /*background-color: #F1F1F1;*/
+  background-color: white;
+  border: 1px solid #1495FF;
+  padding: 5px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  box-shadow: 1px 1px 5px #888888;
+}
+.tag a {
+  text-decoration: none;
+  color: #1495FF;
+}
+.tag a:hover {
+  /*font-size: 110%;*/
+}
+.allTags {
+  padding: 10px;
+}
+.mostUsedTags {
+  /*border-top: 1px dashed gray;*/
+  min-height: 120px;
+  margin-left: 80px;
+}
+.tags {
+  /*margin-top: 50px;*/
+}
+.tags2 {
+  margin-top: 120px;
+}

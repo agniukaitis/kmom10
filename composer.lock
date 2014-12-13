@@ -1,0 +1,200 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7128dd9ad640d9c8eb8c45d2703f2ce4",
+    "packages": [
+        {
+            "name": "mos/cdatabase",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/cdatabase.git",
+                "reference": "bc8627e364e632253cf8ccbdc78efc70b3c772c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/cdatabase/zipball/bc8627e364e632253cf8ccbdc78efc70b3c772c9",
+                "reference": "bc8627e364e632253cf8ccbdc78efc70b3c772c9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP classes for database handling upon PDO",
+            "homepage": "http://dbwebb.se",
+            "keywords": [
+                "education",
+                "framework",
+                "micro",
+                "module",
+                "mvc"
+            ],
+            "time": "2014-05-19 07:48:35"
+        },
+        {
+            "name": "mos/cform",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/cform.git",
+                "reference": "10eb8f237655daba9aa08f085abe187e967a6b43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/cform/zipball/10eb8f237655daba9aa08f085abe187e967a6b43",
+                "reference": "10eb8f237655daba9aa08f085abe187e967a6b43",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Classes for HTML Forms",
+            "homepage": "http://dbwebb.se/",
+            "keywords": [
+                "Forms",
+                "education",
+                "html"
+            ],
+            "time": "2014-11-25 06:21:16"
+        },
+        {
+            "name": "niw/flashingmessage",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/niwhede/Flashingmessage.git",
+                "reference": "1b0ca1734cc0eb79b0691be310fc2ff437e7a74e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/niwhede/Flashingmessage/zipball/1b0ca1734cc0eb79b0691be310fc2ff437e7a74e",
+                "reference": "1b0ca1734cc0eb79b0691be310fc2ff437e7a74e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TBM\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johan Niwhede",
+                    "email": "niwhede@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Class to handle debug, warning, error and success messages",
+            "keywords": [
+                "message",
+                "session",
+                "status"
+            ],
+            "time": "2014-11-25 11:54:56"
+        },
+        {
+            "name": "phpmvc/comment",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/phpmvc-comment.git",
+                "reference": "ea5c43e8bb3f723d6fb69c892500d26c7390eb37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/phpmvc-comment/zipball/ea5c43e8bb3f723d6fb69c892500d26c7390eb37",
+                "reference": "ea5c43e8bb3f723d6fb69c892500d26c7390eb37",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpmvc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Various base classes for comments management",
+            "homepage": "http://dbwebb.se",
+            "keywords": [
+                "comments",
+                "education"
+            ],
+            "time": "2014-04-02 12:59:02"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "phpmvc/comment": 20,
+        "mos/cform": 20,
+        "mos/cdatabase": 20,
+        "niw/flashingmessage": 20,
+        "satooshi/php-coveralls": 20
+    },
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": []
+}

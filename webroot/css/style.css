@@ -1,0 +1,153 @@
+/**
+ * General elements
+ */
+
+@import url(figure.css);
+@import url(comment.css);
+@import url(table.css);
+@import url(form.css);
+@import url(navbar.css);
+@import url(question.css);
+@import url(users.css);
+@import url(tags.css);
+
+body {
+  color: #333;
+  font-family: helvetica, sans-serif;
+  overflow-y: scroll;
+}
+body a {
+  color: #1495ff;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 2.0em;
+}
+h3.comment {
+  font-size: 1.1em;
+  color: #1495ff;
+}
+h5 {
+  font-size: 2.0em;
+  margin-left: 80px;
+}
+
+/**
+ * Layout of the main page elements
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 980px;
+  padding: 10px;
+}
+
+
+/**
+ * Layout for header
+ */
+#header {
+  position: relative;
+  margin-bottom: 40px;
+  float: left;
+}
+.logo {
+  color: #1495ff;
+}
+
+.sitetitle {
+  position: absolute;
+  top: 6px;
+  left: 130px;
+  font-size: 48px;
+}
+
+.siteslogan {
+  position: absolute;
+  top: 65px;
+  left: 130px;
+  font-style: italic;
+  color: #666;
+}
+
+
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 20em;
+  margin-top: 105px;
+}
+
+
+/**
+ * Layout for footer
+ */
+#footer {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 22px;
+  text-align: center;
+}
+
+.sitefooter {
+  color: #666;
+}
+
+
+/**
+ * For articles
+ */
+.article1 {
+  width: 700px;
+  border-right: 1px solid #ccc;
+  padding-right: 1em;
+}
+
+.article1 h1,
+.article1 h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+.byline {
+  margin-top: 44px;
+  border-top: 1px dashed #ccc;
+  padding-top: 22px;
+  color: #666;
+  font-size: smaller;
+  text-decoration: italic;
+}
+
+.byline p {
+  margin-top: 0;
+}
+.right {
+  float: right;
+  position: relative;
+}
+.left {
+  float: left;
+}
+aside {
+  float: right;
+  margin-right: 50px;
+}
+div#box {
+  background-color: #1495FF;
+  padding: 15px;
+}
+div#box a {
+  color: white;
+  text-decoration: none;
+}
+textarea {
+  min-height: 200px;
+}
+.gray {
+  color: gray;
+}
+.padd {
+  padding: 4px;
+}

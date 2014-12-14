@@ -284,13 +284,15 @@ class Question extends \Anax\MVC\CDatabaseModel {
     return $res;
   }
   public function sortAnswersByVotes() {
-    $sql ="SELECT * FROM test_answer ORDER BY votes DESC;";
-    $res = $this->db->executeFetchAll($sql);
+    $sql ="SELECT * FROM test_answer WHERE questionID = ? ORDER BY votes DESC;";
+    $params = array($id);
+    $res = $this->db->executeFetchAll($sql, $params);
     return $res;
   }
   public function sortAnswersByDate() {
-    $sql ="SELECT * FROM test_answer ORDER BY id DESC;";
-    $res = $this->db->executeFetchAll($sql);
+    $sql ="SELECT * FROM test_answer WHERE questionID = ? ORDER BY id DESC;";
+    $params = array($id);
+    $res = $this->db->executeFetchAll($sql, $params);
     return $res;
   }
 

@@ -9,5 +9,8 @@ Installing
 To install you own version of the website, you can clone the repo using:
 >    git clone https://github.com/niwhede/kmom10.git
 
+
 The site used MySql databases to store information. To use the site properly
-you need six sql tables.
+you need six sql tables. They can all be created by going to:
+
+>     http://www.student.bth.se/~jonj14/phpmvc/kmom10/webroot/question/setup

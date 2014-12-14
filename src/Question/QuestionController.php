@@ -521,9 +521,9 @@ class QuestionController implements \Anax\DI\IInjectionAware {
     }
     public function sortAnswersAction($id = null, $option = null) {
       if ($option == "votes") {
-        $all = $this->question->sortAnswersByVotes();
+        $all = $this->question->sortAnswersByVotes($id);
       } else if ($option == "date") {
-        $all = $this->question->sortAnswersByDate();
+        $all = $this->question->sortAnswersByDate($id);
       }
       $question = $this->question->find($id);
       $this->theme->setTitle("Läs fråga");

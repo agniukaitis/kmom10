@@ -61,7 +61,7 @@
         $date = ' idag';
       } else {
         $date = $seconds_diff / 86400;
-        $date = round($date, 1);
+        $date = round($date, 0);
         $date .= "dagar sedan";
       }
       ?>
@@ -123,7 +123,7 @@
       $date = ' idag';
     } else {
       $date = $seconds_diff / 86400;
-      $date = round($date, 1);
+      $date = round($date, 0);
       $date .= " dagar sedan";
     }
     ?> -->
